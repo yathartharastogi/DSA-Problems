@@ -31,8 +31,8 @@ Every solution file includes:
 
 | Platform | Solved |
 |----------|---------|
-| LeetCode | 1 |
-| **Total** | **1** |
+| LeetCode | 2 |
+| **Total** | **2** |
 
 ---
 
