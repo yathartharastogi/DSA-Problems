@@ -1,6 +1,6 @@
 /*
  * Problem : Watermelon
- * Platform : Codeforces 4A
+ * Platform : Codeforces #4A
  * Difficulty : Easy
  * Topic : Math, Implementation
  *
