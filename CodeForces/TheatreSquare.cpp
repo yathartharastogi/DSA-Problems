@@ -1,7 +1,7 @@
 /*
  * Problem : Theatre Square
  * Platform : Codeforces #1A
- * Difficulty : Easy
+ * Difficulty : Medium
  * Topic : Math, Implementation
  *
  * Time Complexity  : O(1)
