@@ -8,9 +8,10 @@ This repository serves as a record of my progress, consistency, and learning acr
 
 ## Repository Structure
 
-| Folder | Description |
-|----------|-------------|
-| LeetCode/ | Solutions to LeetCode problems |
+| Folder      | Description                      |
+| ----------- | -------------------------------- |
+| LeetCode/   | Solutions to LeetCode problems   |
+| CodeForces/ | Solutions to Codeforces problems |
 
 ---
 
@@ -18,22 +19,42 @@ This repository serves as a record of my progress, consistency, and learning acr
 
 Every solution file includes:
 
-- Problem name
-- Platform & problem number
-- Difficulty level
-- Topic/category
-- Time Complexity
-- Space Complexity
-- C++ implementation
+* Problem name
+* Platform & problem number
+* Difficulty level
+* Topic/category
+* Time Complexity
+* Space Complexity
+* C++ implementation
 
+### Example
+
+```cpp
+/*
+ * Problem : Watermelon
+ * Platform : Codeforces 4A
+ * Difficulty : Easy
+ * Topic : Math, Implementation
+ *
+ * Time Complexity  : O(1)
+ * Space Complexity : O(1)
+ *
+ * Submitted on : DD/MM/YYYY
+ * Submitted by : Yathartha Rastogi
+ */
+```
+
+---
 
 ## Progress Tracker
 
-| Platform | Solved |
-|----------|---------|
-| LeetCode | 4 |
-| Codeforces | 0 |
-| **Total** | **4** |
+| Platform   | Solved |
+| ---------- | ------ |
+| LeetCode   | 0      |
+| Codeforces | 0      |
+| **Total**  | **0**  |
+
+> These counts are updated automatically using GitHub Actions whenever new solutions are pushed.
 
 ---
 
@@ -43,15 +64,15 @@ Solving DSA problems regularly as part of the **#DrGVishwanathanChallenge** at V
 
 ---
 
-## Language Used
+## Languages Used
 
-- C++
+* C++
 
 ---
 
 ## Connect With Me
 
-- LinkedIn: [Yathartha Rastogi](https://www.linkedin.com/in/yathartha-rastogi/)
+* LinkedIn: [Yathartha Rastogi](https://www.linkedin.com/in/yathartha-rastogi/)
 
 ---
 
