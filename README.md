@@ -51,7 +51,7 @@ Every solution file includes:
 | Platform   | Solved |
 | ---------- | ------ |
 | LeetCode   | 0      |
-| Codeforces | 0      |
+| CodeForces | 0      |
 | **Total**  | **0**  |
 
 > These counts are updated automatically using GitHub Actions whenever new solutions are pushed.
