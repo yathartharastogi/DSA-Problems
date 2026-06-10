@@ -31,8 +31,8 @@ Every solution file includes:
 
 | Platform | Solved |
 |----------|---------|
-| LeetCode | 1 |
-| **Total** | **1** |
+| LeetCode | 2 |
+| **Total** | **2** |
 
 ---
 
@@ -48,7 +48,7 @@ Solving DSA problems regularly as part of the **#DrGVishwanathanChallenge** at V
 
 ---
 
-## 🤝 Connect With Me
+## Connect With Me
 
 - LinkedIn: [Yathartha Rastogi](https://www.linkedin.com/in/yathartha-rastogi/)
 
