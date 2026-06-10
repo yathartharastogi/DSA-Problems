@@ -10,8 +10,8 @@ This repository serves as a record of my progress, consistency, and learning acr
 
 | Folder      | Description                      |
 | ----------- | -------------------------------- |
-| LeetCode/   | Solutions to LeetCode problems   |
-| CodeForces/ | Solutions to Codeforces problems |
+| LeetCode   | 4 |
+| CodeForces | 1 |
 
 ---
 
@@ -50,9 +50,9 @@ Every solution file includes:
 
 | Platform   | Solved |
 | ---------- | ------ |
-| LeetCode   | 0      |
-| CodeForces | 0      |
-| **Total**  | **0**  |
+| LeetCode   | 4 |
+| CodeForces | 1 |
+| **Total** | **5** |
 
 > These counts are updated automatically using GitHub Actions whenever new solutions are pushed.
 
