@@ -1,4 +1,3 @@
-```yaml
 name: Update README Count
 
 on:
@@ -42,4 +41,3 @@ jobs:
             git commit -m "Update solution count"
             git push
           fi
-```
