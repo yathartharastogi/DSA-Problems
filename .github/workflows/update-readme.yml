@@ -18,11 +18,11 @@ jobs:
       - name: Update count
         run: |
           LEETCODE_COUNT=$(find LeetCode -name "*.cpp" | wc -l)
-          CODEFORCES_COUNT=$(find Codeforces -name "*.cpp" | wc -l)
+          CODEFORCES_COUNT=$(find CodeForces -name "*.cpp" | wc -l)
           TOTAL_COUNT=$((LEETCODE_COUNT + CODEFORCES_COUNT))
 
           sed -i "s/| LeetCode | .* |/| LeetCode | $LEETCODE_COUNT |/" README.md
-          sed -i "s/| Codeforces | .* |/| Codeforces | $CODEFORCES_COUNT |/" README.md
+          sed -i "s/| CodeForces | .* |/| CodeForces | $CODEFORCES_COUNT |/" README.md
           sed -i "s/| \*\*Total\*\* | .* |/| **Total** | **$TOTAL_COUNT** |/" README.md
     
       - name: Commit changes
