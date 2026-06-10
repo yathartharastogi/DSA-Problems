@@ -1,3 +1,4 @@
+```yaml
 name: Update README Count
 
 on:
@@ -18,12 +19,17 @@ jobs:
       - name: Update count
         run: |
           LEETCODE_COUNT=$(find LeetCode -type f -name "*.cpp" | wc -l)
-          CodeForces_COUNT=$(find CodeForces -type f -name "*.cpp" | wc -l)
-          TOTAL_COUNT=$((LEETCODE_COUNT + CodeForces_COUNT))
+          CODEFORCES_COUNT=$(find CodeForces -type f -name "*.cpp" | wc -l)
+          TOTAL_COUNT=$((LEETCODE_COUNT + CODEFORCES_COUNT))
 
-          sed -i "s/| LeetCode | .* |/| LeetCode | $LEETCODE_COUNT |/" README.md
-          sed -i "s/| CodeForces | .* |/| CodeForces | $CodeForces_COUNT |/" README.md
-          sed -i "s/| \*\*Total\*\* | .* |/| **Total** | **$TOTAL_COUNT** |/" README.md
+          awk -v lc="$LEETCODE_COUNT" -v cf="$CODEFORCES_COUNT" -v total="$TOTAL_COUNT" '
+          /\| LeetCode/   {print "| LeetCode   | " lc " |"; next}
+          /\| CodeForces/ {print "| CodeForces | " cf " |"; next}
+          /\| \*\*Total\*\*/ {print "| **Total** | **" total "** |"; next}
+          {print}
+          ' README.md > README.tmp
+
+          mv README.tmp README.md
 
       - name: Commit changes
         run: |
@@ -36,3 +42,4 @@ jobs:
             git commit -m "Update solution count"
             git push
           fi
+```
