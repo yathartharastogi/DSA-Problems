@@ -12,7 +12,7 @@
 
 
  
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 bool isEven(int w){
