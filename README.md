@@ -6,12 +6,31 @@ This repository serves as a record of my progress, consistency, and learning acr
 
 ---
 
+## DSA Vault
+
+For a more comprehensive view of my progress, visit the live dashboard:
+
+### [DSA Vault](https://yathartharastogi.github.io/DSA-Vault/)
+
+The dashboard provides:
+
+- Problem-wise tracking
+- Platform-wise statistics
+- Difficulty distribution
+- Search and filtering capabilities
+- Progress analytics
+- Solution archive
+
+> This repository contains the source code for solved problems, while DSA Vault offers a structured and interactive overview of the overall journey.
+
+---
+
 ## Repository Structure
 
 | Folder      | Description                      |
 | ----------- | -------------------------------- |
-| LeetCode/   | Solutions to LeetCode problems   |
-| CodeForces/ | Solutions to Codeforces problems |
+| LeetCode   | 4 |
+| CodeForces | 1 |
 
 ---
 
@@ -50,9 +69,9 @@ Every solution file includes:
 
 | Platform   | Solved |
 | ---------- | ------ |
-| LeetCode   | 0      |
-| CodeForces | 0      |
-| **Total**  | **0**  |
+| LeetCode   | 4 |
+| CodeForces | 1 |
+| **Total** | **5** |
 
 > These counts are updated automatically using GitHub Actions whenever new solutions are pushed.
 
