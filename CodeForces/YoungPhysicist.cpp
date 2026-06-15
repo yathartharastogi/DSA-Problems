@@ -1,5 +1,5 @@
 /*
- * Problem : A. Young Physicist
+ * Problem : Young Physicist
  * Platform : Codeforces #69A
  * Difficulty : Medium
  * Topic : Math, Implementation

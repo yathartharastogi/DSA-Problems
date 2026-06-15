@@ -1,5 +1,5 @@
 /*
- * Problem : A. Word
+ * Problem : Word
  * Platform : Codeforces #59A
  * Difficulty : Easy
  * Topic : Strings, Implementation

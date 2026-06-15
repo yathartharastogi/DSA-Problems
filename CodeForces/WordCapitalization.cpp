@@ -1,5 +1,5 @@
 /*
- * Problem : A. Word Capitalization
+ * Problem : Word Capitalization
  * Platform : Codeforces #281A
  * Difficulty : Easy
  * Topic : Strings

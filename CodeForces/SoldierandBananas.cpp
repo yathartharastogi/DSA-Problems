@@ -1,5 +1,5 @@
 /*
- * Problem : A. Soldier and Bananas
+ * Problem : Soldier and Bananas
  * Platform : Codeforces #546A
  * Difficulty : Easy
  * Topic : Math

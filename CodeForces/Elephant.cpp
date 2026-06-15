@@ -1,5 +1,5 @@
 /*
- * Problem : A. Elephant
+ * Problem : Elephant
  * Platform : Codeforces #617A
  * Difficulty : Easy
  * Topic : Math, Greedy
