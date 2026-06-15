@@ -1,5 +1,5 @@
 /*
- * Problem : 2. Add Two Numbers
+ * Problem : Add Two Numbers
  * Platform : LeetCode
  * Difficulty : Medium
  * Topic : Linked List, Math, Simulation
