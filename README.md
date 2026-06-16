@@ -30,7 +30,7 @@ The dashboard provides:
 | Folder      | Description                      |
 | ----------- | -------------------------------- |
 | LeetCode   | 12 |
-| CodeForces | 17 |
+| CodeForces | 18 |
 
 ---
 
@@ -70,8 +70,8 @@ Every solution file includes:
 | Platform   | Solved |
 | ---------- | ------ |
 | LeetCode   | 12 |
-| CodeForces | 17 |
-| **Total** | **29** |
+| CodeForces | 18 |
+| **Total** | **30** |
 
 > These counts are updated automatically using GitHub Actions whenever new solutions are pushed.
 
