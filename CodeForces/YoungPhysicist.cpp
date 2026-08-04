@@ -1,37 +1,43 @@
 /*
  * Problem : Young Physicist
  * Platform : Codeforces #69A
- * Difficulty : Medium
+ * Difficulty : Easy
  * Topic : Math, Implementation
  *
  * Time Complexity  : O(n)
  * Space Complexity : O(1)
- * Submitted on : 14/06/2026
+ * Submitted on : 11/06/2026
  * Submitted by : Yathartha Rastogi
  */
 
-
-
- #include <bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
     int n;
     cin >> n;
 
-    int xSum = 0, ySum = 0, zSum = 0;
+    int sumX = 0, sumY = 0, sumZ = 0;
 
-    while (n--) {
+    // Sum up force vectors along x, y, and z axes
+    for (int i = 0; i < n; i++) {
         int x, y, z;
         cin >> x >> y >> z;
-
-        xSum += x;
-        ySum += y;
-        zSum += z;
+        sumX += x;
+        sumY += y;
+        sumZ += z;
     }
 
-    if (xSum == 0 && ySum == 0 && zSum == 0)
-        cout << "YES";
-    else
-        cout << "NO";
-}`
+    // Body is in equilibrium if net force along all 3 axes is 0
+    if (sumX == 0 && sumY == 0 && sumZ == 0) {
+        cout << "YES\n";
+    } else {
+        cout << "NO\n";
+    }
+
+    return 0;
+}
