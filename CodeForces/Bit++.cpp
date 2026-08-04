@@ -2,40 +2,40 @@
  * Problem : Bit++
  * Platform : Codeforces #282A
  * Difficulty : Easy
- * Topic : Implementation, Strings
+ * Topic : Implementation, String
  *
  * Time Complexity  : O(n)
  * Space Complexity : O(1)
- * Submitted on : 12/06/2026
+ * Submitted on : 11/06/2026
  * Submitted by : Yathartha Rastogi
  */
-
-
 
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
 
     int n;
-    int x = 0;
     cin >> n;
 
-    while(n--){
+    int x = 0;
 
-        string a;
-        cin >> a;
+    // Execute Bit++ statement operations
+    while (n--) {
+        string s;
+        cin >> s;
 
-        if(a[1] == '+'){
+        // Check if statement contains '+' or '-'
+        if (s.find('+') != string::npos) {
             x++;
-        }
-        else{
+        } else {
             x--;
         }
-
     }
 
-    cout << x << '\n';
-
+    cout << x << "\n";
     return 0;
 }
