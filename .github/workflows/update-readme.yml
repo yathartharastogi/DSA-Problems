@@ -17,8 +17,8 @@ jobs:
 
       - name: Update count
         run: |
-          LEETCODE_COUNT=$(find LeetCode -type f -name "*.cpp" | wc -l)
-          CODEFORCES_COUNT=$(find CodeForces -type f -name "*.cpp" | wc -l)
+          LEETCODE_COUNT=$(find LeetCode -type f \( -name "*.cpp" -o -name "*.java" \) | wc -l)
+          CODEFORCES_COUNT=$(find CodeForces -type f \( -name "*.cpp" -o -name "*.java" \) | wc -l)
           TOTAL_COUNT=$((LEETCODE_COUNT + CODEFORCES_COUNT))
 
           awk -v lc="$LEETCODE_COUNT" -v cf="$CODEFORCES_COUNT" -v total="$TOTAL_COUNT" '
