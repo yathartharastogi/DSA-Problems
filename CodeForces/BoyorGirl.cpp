@@ -4,32 +4,36 @@
  * Difficulty : Easy
  * Topic : Strings, Set
  *
- * Time Complexity  : O(n log n)
+ * Time Complexity  : O(n)
  * Space Complexity : O(n)
- * Submitted on : 12/06/2026
+ * Submitted on : 11/06/2026
  * Submitted by : Yathartha Rastogi
  */
 
-
- 
-#include <iostream>
-#include <set>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
     string s;
     cin >> s;
 
-    set<char> t;
+    unordered_set<char> st;
 
+    // Collect distinct characters in username
     for (char c : s) {
-        t.insert(c);
+        st.insert(c);
     }
 
-    if (t.size() % 2 == 0)
-        cout << "CHAT WITH HER!";
-    else
-        cout << "IGNORE HIM!";
+    // Determine gender response based on parity of distinct characters count
+    if (st.size() % 2 == 0) {
+        cout << "CHAT WITH HER!\n";
+    } else {
+        cout << "IGNORE HIM!\n";
+    }
 
     return 0;
 }
