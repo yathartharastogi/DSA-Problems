@@ -10,23 +10,28 @@
  * Submitted by : Yathartha Rastogi
  */
 
-
- 
 #include <bits/stdc++.h>
 using namespace std;
 
-bool isEven(int w){
+// Check if weight is even
+bool isEven(int w) {
     return w % 2 == 0;
 }
-int main(){
+
+int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
     int w;
     cin >> w;
-    
-    if (isEven(w) && w > 2){
-        cout << "YES" << endl;
+
+    // Watermelon can be split into two even parts iff w is even and > 2
+    if (isEven(w) && w > 2) {
+        cout << "YES\n";
     } else {
-        cout << "NO" << endl;
+        cout << "NO\n";
     }
+
     return 0;
 }
-
