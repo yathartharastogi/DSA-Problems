@@ -1,3 +1,15 @@
+/*
+ * Problem : Soft Drinking
+ * Platform : Codeforces #151A
+ * Difficulty : Easy
+ * Topic : Math, Implementation
+ *
+ * Time Complexity  : O(1)
+ * Space Complexity : O(1)
+ * Submitted on : 11/06/2026
+ * Submitted by : Yathartha Rastogi
+ */
+
 import java.util.*;
 
 public class SoftDrinking {
@@ -13,13 +25,15 @@ public class SoftDrinking {
         int nl = sc.nextInt();
         int np = sc.nextInt();
 
+        // Total drinks, lime slices, and salt portions available
         int drinkToasts = (k * l) / nl;
         int limeToasts = c * d;
         int saltToasts = p / np;
 
-        int ans = Math.min(drinkToasts,
-                  Math.min(limeToasts, saltToasts)) / n;
+        // Maximum equal toasts each friend can make
+        int ans = Math.min(drinkToasts, Math.min(limeToasts, saltToasts)) / n;
 
         System.out.println(ans);
+        sc.close();
     }
 }
