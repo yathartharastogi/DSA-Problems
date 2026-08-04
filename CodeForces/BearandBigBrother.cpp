@@ -4,28 +4,32 @@
  * Difficulty : Easy
  * Topic : Implementation, Simulation
  *
- * Time Complexity : O(log n)
+ * Time Complexity  : O(log n)
  * Space Complexity : O(1)
  * Submitted on : 14/07/2026
  * Submitted by : Yathartha Rastogi
  */
 
-
-
 #include <bits/stdc++.h>
 using namespace std;
 
-int main(){
+int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
 
-    int a,b; 
-    int i = 0;
-
+    int a, b;
     cin >> a >> b;
-    while (a <= b ){
-        a = a*3;
-        b = b*2;
-        i++;
+
+    int years = 0;
+
+    // Simulate growth: Lim's weight triples (x3), Bob's weight doubles (x2) each year
+    while (a <= b) {
+        a *= 3;
+        b *= 2;
+        years++;
     }
 
-    cout << i;
+    cout << years << "\n";
+    return 0;
 }
