@@ -1,43 +1,42 @@
 /*
- * Problem : Chat Room
+ * Problem : Chat room
  * Platform : Codeforces #58A
  * Difficulty : Easy
- * Topic : Strings, Greedy, Implementation
+ * Topic : Strings, Greedy
  *
- * Time Complexity : O(n)
+ * Time Complexity  : O(n)
  * Space Complexity : O(1)
- * Submitted on : 15/07/2026
+ * Submitted on : 14/06/2026
  * Submitted by : Yathartha Rastogi
  */
 
-
- 
 #include <bits/stdc++.h>
 using namespace std;
 
-int main(){
+int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
 
     string s;
     cin >> s;
 
-
-    string check = "hello";
-
+    string target = "hello";
     int j = 0;
 
-    for(char c : s){
-
-        if(j < check.size() && c == check[j]){
+    // Greedy subsequence matching for target "hello"
+    for (size_t i = 0; i < s.length(); i++) {
+        if (s[i] == target[j]) {
             j++;
         }
+        if (j == 5) break;
     }
 
-    if(j == check.size()){
-        cout << "YES" << endl;
+    if (j == 5) {
+        cout << "YES\n";
+    } else {
+        cout << "NO\n";
     }
 
-    else {
-        cout << "NO" << endl;
-    }
-
+    return 0;
 }
