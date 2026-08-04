@@ -2,40 +2,41 @@
  * Problem : Next Round
  * Platform : Codeforces #158A
  * Difficulty : Easy
- * Topic : Implementation
+ * Topic : Implementation, Array
  *
  * Time Complexity  : O(n)
  * Space Complexity : O(n)
- * Submitted on : 12/06/2026
+ * Submitted on : 11/06/2026
  * Submitted by : Yathartha Rastogi
  */
-
-
 
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
 
     int n, k;
     cin >> n >> k;
 
-    vector<int> scores(n);
-
+    vector<int> a(n);
     for (int i = 0; i < n; i++) {
-        cin >> scores[i];
+        cin >> a[i];
     }
 
-    int cutoff = scores[k - 1];
-    int ans = 0;
+    // Cutoff score from the k-th participant (0-indexed k-1)
+    int cutoff = a[k - 1];
+    int count = 0;
 
-    for (int score : scores) {
-        if (score >= cutoff && score > 0) {
-            ans++;
+    // Count participants with score >= cutoff and score > 0
+    for (int i = 0; i < n; i++) {
+        if (a[i] >= cutoff && a[i] > 0) {
+            count++;
         }
     }
 
-    cout << ans << '\n';
-
+    cout << count << "\n";
     return 0;
 }
