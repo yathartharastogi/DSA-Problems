@@ -4,29 +4,32 @@
  * Difficulty : Easy
  * Topic : Strings, Implementation
  *
- * Time Complexity  : O(n)
- * Space Complexity : O(1)
+ * Time Complexity  : O(1) per word
+ * Space Complexity : O(1) per word
  * Submitted on : 11/06/2026
  * Submitted by : Yathartha Rastogi
  */
 
-
- 
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
     int n;
     cin >> n;
 
     while (n--) {
-        string word;
-        cin >> word;
+        string s;
+        cin >> s;
 
-        if (word.length() <= 10) {
-            cout << word << '\n';
+        // Abbreviate words strictly longer than 10 characters
+        if (s.length() > 10) {
+            cout << s[0] << s.length() - 2 << s.back() << "\n";
         } else {
-            cout << word[0] << word.length() - 2 << word[word.length() - 1] << '\n';
+            cout << s << "\n";
         }
     }
 
