@@ -2,25 +2,30 @@
  * Problem : Word Capitalization
  * Platform : Codeforces #281A
  * Difficulty : Easy
- * Topic : Strings
+ * Topic : Strings, Implementation
  *
- * Time Complexity  : O(n)
+ * Time Complexity  : O(1)
  * Space Complexity : O(1)
- * Submitted on : 12/06/2026
+ * Submitted on : 11/06/2026
  * Submitted by : Yathartha Rastogi
  */
-
-
 
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
 
     string s;
     cin >> s;
 
-    s[0] = toupper(s[0]);
+    // Capitalize first character of string
+    if (!s.empty()) {
+        s[0] = toupper(s[0]);
+    }
 
-    cout << s;
+    cout << s << "\n";
+    return 0;
 }
