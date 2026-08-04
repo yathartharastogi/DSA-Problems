@@ -1,8 +1,8 @@
 /*
  * Problem : Theatre Square
  * Platform : Codeforces #1A
- * Difficulty : Medium
- * Topic : Math, Implementation
+ * Difficulty : Easy
+ * Topic : Math
  *
  * Time Complexity  : O(1)
  * Space Complexity : O(1)
@@ -10,21 +10,23 @@
  * Submitted by : Yathartha Rastogi
  */
 
-
- 
 #include <bits/stdc++.h>
 using namespace std;
 
-int main(){
+int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
 
-    long long m,n,a;
-    cin >> m >> n >> a;
+    long long n, m, a;
+    cin >> n >> m >> a;
 
-    long long r = (m + a - 1)/a;
-    long long c = (n + a - 1)/a;
-    cout<< r * c;
-    
+    // Calculate flagstones needed along length and width (ceil division)
+    long long length_flagstones = (n + a - 1) / a;
+    long long width_flagstones = (m + a - 1) / a;
+
+    // Total flagstones required
+    cout << length_flagstones * width_flagstones << "\n";
 
     return 0;
 }
-
