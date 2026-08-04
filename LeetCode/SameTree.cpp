@@ -4,30 +4,31 @@
  * Difficulty : Easy
  * Topic : Binary Tree, Recursion
  *
- * Time Complexity : O(n)
+ * Time Complexity  : O(n)
  * Space Complexity : O(h)
- * Submitted on: 10/6/2026
+ * Submitted on : 10/06/2026
  * Submitted by : Yathartha Rastogi
  */
 
-
-
- class Solution {
+class Solution {
 public:
     bool isSameTree(TreeNode* p, TreeNode* q) {
+        // Both nodes are null -> identical
+        if (p == nullptr && q == nullptr) {
+            return true;
+        }
 
-       if(p == nullptr && q == nullptr){
-        return true;
-       }
+        // One node is null while other is not -> not identical
+        if (p == nullptr || q == nullptr) {
+            return false;
+        }
 
-       if(p == nullptr || q == nullptr){
-        return false;
-       }
+        // Node values differ -> not identical
+        if (p->val != q->val) {
+            return false;
+        }
 
-       if(p->val != q->val){
-        return false;
-       }
-
-       return isSameTree(p->left, q->left) && isSameTree(p->right, q->right);
+        // Check both left and right subtrees recursively
+        return isSameTree(p->left, q->left) && isSameTree(p->right, q->right);
     }
 };
