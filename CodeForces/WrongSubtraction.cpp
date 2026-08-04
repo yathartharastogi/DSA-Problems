@@ -2,36 +2,34 @@
  * Problem : Wrong Subtraction
  * Platform : Codeforces #977A
  * Difficulty : Easy
- * Topic : Implementation, Simulation
+ * Topic : Implementation
  *
- * Time Complexity : O(k)
+ * Time Complexity  : O(k)
  * Space Complexity : O(1)
- * Submitted on : 14/07/2026
+ * Submitted on : 11/06/2026
  * Submitted by : Yathartha Rastogi
  */
 
-
- 
 #include <bits/stdc++.h>
 using namespace std;
 
-int main(){
+int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
 
-    int n,k;
+    int n, k;
     cin >> n >> k;
 
-    while (k != 0){
-
-        if(n % 10 == 0){
-            n = n/10;
+    // Perform k subtraction steps according to Tanya's algorithm
+    while (k--) {
+        if (n % 10 == 0) {
+            n /= 10;
+        } else {
+            n--;
         }
-        
-        else{
-            n = n-1;
-        }
-
-        k--;
     }
 
-    cout << n;
+    cout << n << "\n";
+    return 0;
 }
