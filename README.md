@@ -29,7 +29,7 @@ The dashboard provides:
 
 | Folder      | Description                      |
 | ----------- | -------------------------------- |
-| LeetCode   | 15 |
+| LeetCode   | 15     |
 | CodeForces | 41 |
 
 ---
@@ -69,7 +69,7 @@ Every solution file includes:
 
 | Platform   | Solved |
 | ---------- | ------ |
-| LeetCode   | 15 |
+| LeetCode   | 15     |
 | CodeForces | 41 |
 | **Total** | **56** |
 
