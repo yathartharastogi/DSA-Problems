@@ -6,7 +6,7 @@
  *
  * Time Complexity  : O(n)
  * Space Complexity : O(1)
- M/06/2026
+ * Submitted on : 15/06/2026
  * Submitted by : Yathartha Rastogi
  */
 
